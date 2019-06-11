@@ -12,6 +12,11 @@
 		0B343D9422AFFBB100B9BD8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B343D9222AFFBB100B9BD8B /* Main.storyboard */; };
 		0B343D9622AFFBB200B9BD8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B343D9522AFFBB200B9BD8B /* Assets.xcassets */; };
 		0B343D9922AFFBB200B9BD8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B343D9722AFFBB200B9BD8B /* LaunchScreen.storyboard */; };
+		0B8F9B7C22AFFDBF00C185F4 /* Images.zip in Resources */ = {isa = PBXBuildFile; fileRef = 0B8F9B7B22AFFDBF00C185F4 /* Images.zip */; };
+		0B8F9B8122AFFE6600C185F4 /* PatagoniaSky.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0B8F9B7E22AFFE6600C185F4 /* PatagoniaSky.JPG */; };
+		0B8F9B8222AFFE6600C185F4 /* CradleMountain.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0B8F9B7F22AFFE6600C185F4 /* CradleMountain.JPG */; };
+		0B8F9B8322AFFE6600C185F4 /* Laguna69.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0B8F9B8022AFFE6600C185F4 /* Laguna69.JPG */; };
+		0B8F9B8522B0014300C185F4 /* ViewController_handlePan_method_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F9B8422B0014300C185F4 /* ViewController_handlePan_method_addition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		0B343D9522AFFBB200B9BD8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B343D9822AFFBB200B9BD8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B343D9A22AFFBB200B9BD8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B8F9B7B22AFFDBF00C185F4 /* Images.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Images.zip; sourceTree = "<group>"; };
+		0B8F9B7E22AFFE6600C185F4 /* PatagoniaSky.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PatagoniaSky.JPG; sourceTree = "<group>"; };
+		0B8F9B7F22AFFE6600C185F4 /* CradleMountain.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CradleMountain.JPG; sourceTree = "<group>"; };
+		0B8F9B8022AFFE6600C185F4 /* Laguna69.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Laguna69.JPG; sourceTree = "<group>"; };
+		0B8F9B8422B0014300C185F4 /* ViewController_handlePan_method_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_handlePan_method_addition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,7 @@
 		0B343D8222AFFBB000B9BD8B = {
 			isa = PBXGroup;
 			children = (
+				0B8F9B7922AFFD8C00C185F4 /* Snippets */,
 				0B343D8D22AFFBB000B9BD8B /* ImageViewer */,
 				0B343D8C22AFFBB000B9BD8B /* Products */,
 			);
@@ -54,6 +65,7 @@
 		0B343D8D22AFFBB000B9BD8B /* ImageViewer */ = {
 			isa = PBXGroup;
 			children = (
+				0B8F9B7D22AFFE6600C185F4 /* Images */,
 				0B343D8E22AFFBB100B9BD8B /* AppDelegate.swift */,
 				0B343D9022AFFBB100B9BD8B /* ViewController.swift */,
 				0B343D9222AFFBB100B9BD8B /* Main.storyboard */,
@@ -62,6 +74,33 @@
 				0B343D9A22AFFBB200B9BD8B /* Info.plist */,
 			);
 			path = ImageViewer;
+			sourceTree = "<group>";
+		};
+		0B8F9B7922AFFD8C00C185F4 /* Snippets */ = {
+			isa = PBXGroup;
+			children = (
+				0B8F9B7A22AFFD9A00C185F4 /* pan-gesture */,
+			);
+			path = Snippets;
+			sourceTree = "<group>";
+		};
+		0B8F9B7A22AFFD9A00C185F4 /* pan-gesture */ = {
+			isa = PBXGroup;
+			children = (
+				0B8F9B7B22AFFDBF00C185F4 /* Images.zip */,
+				0B8F9B8422B0014300C185F4 /* ViewController_handlePan_method_addition.swift */,
+			);
+			path = "pan-gesture";
+			sourceTree = "<group>";
+		};
+		0B8F9B7D22AFFE6600C185F4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0B8F9B7E22AFFE6600C185F4 /* PatagoniaSky.JPG */,
+				0B8F9B7F22AFFE6600C185F4 /* CradleMountain.JPG */,
+				0B8F9B8022AFFE6600C185F4 /* Laguna69.JPG */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +161,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B8F9B8122AFFE6600C185F4 /* PatagoniaSky.JPG in Resources */,
+				0B8F9B8222AFFE6600C185F4 /* CradleMountain.JPG in Resources */,
 				0B343D9922AFFBB200B9BD8B /* LaunchScreen.storyboard in Resources */,
+				0B8F9B7C22AFFDBF00C185F4 /* Images.zip in Resources */,
 				0B343D9622AFFBB200B9BD8B /* Assets.xcassets in Resources */,
+				0B8F9B8322AFFE6600C185F4 /* Laguna69.JPG in Resources */,
 				0B343D9422AFFBB100B9BD8B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +180,7 @@
 			files = (
 				0B343D9122AFFBB100B9BD8B /* ViewController.swift in Sources */,
 				0B343D8F22AFFBB100B9BD8B /* AppDelegate.swift in Sources */,
+				0B8F9B8522B0014300C185F4 /* ViewController_handlePan_method_addition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				EXCLUDED_SOURCE_FILE_NAMES = "\"Snippets/pan-gesture/*\"";
 				INFOPLIST_FILE = ImageViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				EXCLUDED_SOURCE_FILE_NAMES = "\"Snippets/pan-gesture/*\"";
 				INFOPLIST_FILE = ImageViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
