@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,33 +18,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Laguna69.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="qTj-qW-gZR">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CradleMountain.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="mdf-f1-oDZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="q7b-9z-Mio" appends="YES" id="Hrs-jA-zuF"/>
+                                    <outletCollection property="gestureRecognizers" destination="425-8B-ZMU" appends="YES" id="aXl-xa-G2I"/>
+                                    <outletCollection property="gestureRecognizers" destination="MQf-0E-FUF" appends="YES" id="rqD-Rq-xfH"/>
+                                    <outletCollection property="gestureRecognizers" destination="KOy-45-dWJ" appends="YES" id="LdJ-MA-BfC"/>
                                 </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="mdf-f1-oDZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="02f-Fu-nRF"/>
+                            <constraint firstItem="mdf-f1-oDZ" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="7E2-Tk-jAU"/>
+                            <constraint firstItem="mdf-f1-oDZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="erC-Mr-qJA"/>
+                            <constraint firstItem="mdf-f1-oDZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="sG9-9Y-kWn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="agf-9b-dUb"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="qTj-qW-gZR" id="mha-dk-uyz"/>
+                        <outlet property="imageView" destination="mdf-f1-oDZ" id="1aM-qK-Vua"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" maximumNumberOfTouches="2" id="q7b-9z-Mio">
+                <panGestureRecognizer minimumNumberOfTouches="1" maximumNumberOfTouches="1" id="425-8B-ZMU">
                     <connections>
-                        <action selector="handlePan:" destination="BYZ-38-t0r" id="67w-xm-cgL"/>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="eWk-6o-scJ"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="8f2-z3-1wd"/>
                     </connections>
                 </panGestureRecognizer>
+                <pinchGestureRecognizer id="MQf-0E-FUF">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="xU7-jl-f0w"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="ZWT-ud-PSN"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="KOy-45-dWJ">
+                    <connections>
+                        <action selector="handleRotation:" destination="BYZ-38-t0r" id="qjY-do-v4f"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="gxd-UL-6kj"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="470" y="468"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Laguna69.JPG" width="2740" height="1478"/>
+        <image name="CradleMountain.JPG" width="2048" height="1152"/>
     </resources>
 </document>
